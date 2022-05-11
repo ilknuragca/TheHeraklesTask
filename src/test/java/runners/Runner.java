@@ -14,7 +14,7 @@ import org.junit.runner.RunWith;
             },
             features = "src/test/resources/features",     //path of feature
             glue = {"stepdefinitions","hooks"},          //path of stepdefinitions and hooks
-            tags = "@check_of_the_list",
+            tags = "@check_of_checkbox_with_cucumber_data_table",
             dryRun = false                       //to check if there is any missing step definition
 
     )

@@ -1,5 +1,6 @@
 package pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -25,4 +26,12 @@ public class MainPage {
 
     @FindBy(tagName = "h5")
     public WebElement tagText;
+
+
+    public WebElement findElementWithLocate(String str){
+       WebElement element= Driver.getDriver().findElement(By.id(str));
+        return element;
+
+    }
+
 }
